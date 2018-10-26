@@ -10,7 +10,7 @@ Para isso:
 
 2 instalei o pacote Newtonsoft.Json.Schema pelo Package Manager
 
-3 Fiz o seguinte código:
+3 Fiz o seguinte código, os comentários no código tentam explicar os passos.
 
 ```csharp
 public static void Validar()
@@ -18,27 +18,27 @@ public static void Validar()
         // JSON Schema
         // String com um SCHEMA em JSON
         string schemaJSON = @"{
-                           'description': 'Cliente',
-                           'type'       : 'object',
-                           'properties' : {
-                                           'nome'      : {'type':['string','null']},
-                                           'cpf'       : {'type': 'integer' },
-                                           'telefones' : {
-                                                          'type'  : 'array',
-                                                          'items' : {'type' : 'string'},
-                                                          'format': 'phone' 
-                                                         }
-                                          }
-                          }";
+                               'description': 'Cliente',
+                               'type'       : 'object',
+                               'properties' : {
+                                               'nome'      : {'type':['string','null']},
+                                               'cpf'       : {'type': 'integer' },
+                                               'telefones' : {
+                                                              'type'  : 'array',
+                                                              'items' : {'type' : 'string'},
+                                                              'format': 'phone' 
+                                                             }
+                                             }
+                             }";
         // Criando o objeto de parse.
         JSchema schema = JSchema.Parse(schemaJSON);
 
         // Um Cliente escrito em JSON
         string ClienteEmJSON = @"{
-                              'nome'      : 'Bianca',
-                              'cpf'       : 123456789,
-                              'telefones' : ['1234-5678', '9012-3456']
-                             }";
+                                  'nome'      : 'Bianca',
+                                  'cpf'       : 123456789,
+                                  'telefones' : ['1234-5678', '9012-3456']
+                                 }";
         // Fazendo o Parse do Cliente com o Schema.
         JObject cliente = JObject.Parse(ClienteEmJSON);
         // Verificando se é válido.
@@ -48,10 +48,10 @@ public static void Validar()
 
         // Um exemplo de Cliente inválido
         string ClienteEmJSON_Invalido = @"{
-                                        'nome'      : 00,
-                                        'cpf'       : 'fsd',
-                                        'telefones' : ['1234-5678', 6667]
-                                      }";
+                                           'nome'      : 00,
+                                           'cpf'       : 'fsd',
+                                           'telefones' : ['1234-5678', 6667]
+                                          }";
         JObject clienteInvalido = JObject.Parse(ClienteEmJSON_Invalido);
         valido = clienteInvalido.IsValid(schema);
 
