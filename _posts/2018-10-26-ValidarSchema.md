@@ -6,6 +6,7 @@ title: VALIDANDO UM JSON SCHEMA EM C#
 Vamos fazer um exemplo simples em C# para validar um JSON Schema, para isso usaremos o pacote [NewtonSoft](https://www.newtonsoft.com/jsonschema/help/html/Introduction.htm).
 
 Para isso:
+
 1 criei um projeto console (.Net Core) no visual studio;
 
 2 instalei o pacote Newtonsoft.Json.Schema pelo Package Manager
