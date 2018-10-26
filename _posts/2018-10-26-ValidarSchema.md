@@ -11,6 +11,7 @@ Para isso:
 2 instalei o pacote Newtonsoft.Json.Schema pelo Package Manager
 
 3 Fiz o seguinte código
+
 ```csharp
 public static void Validar()
         {
