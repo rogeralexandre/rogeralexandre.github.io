@@ -61,7 +61,10 @@ public static void ValidarComDetalhes()
 ```
 
 Abaixo as mensagens de erro:
+
   *Invalid type. Expected String, Null but got Integer. Path 'nome', line 2, position 64.*
+  
   *Invalid type. Expected Integer but got String. Path 'cpf', line 3, position 67.*
+  
   *Invalid type. Expected String but got Integer. Path 'telefones[1]', line 4, position 80.*
 
