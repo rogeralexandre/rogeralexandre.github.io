@@ -61,3 +61,4 @@ public static void ValidarComDetalhes()
 ```
 
 O resultado em tela ficou assim:
+![alt text](https://github.com/rogeralexandre/rogeralexandre.github.io/blob/master/images/01-ValidandoJSONSchema_Detalhes.PNG "imagem")
