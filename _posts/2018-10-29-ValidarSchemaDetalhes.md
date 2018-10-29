@@ -59,3 +59,5 @@ public static void ValidarComDetalhes()
     }
 }
 ```
+
+O resultado em tela ficou assim:
