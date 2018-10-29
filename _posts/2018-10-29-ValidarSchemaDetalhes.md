@@ -17,7 +17,7 @@ Neste exemplo 90% do código é o mesmo do post anterior (o caso de erro). Acont
   }
 ```
 
-Note que utilizamos a sobrecarga do método IsValid, passei como parâmetro de saída uma lista para poder receber as mensagens de erro retornadas pelo método.
+Note que utilizamos a sobrecarga do método `IsValid`, passei como parâmetro de saída uma lista para poder receber as mensagens de erro retornadas pelo método.
 O código completo está abaixo:
 
 ```csharp
