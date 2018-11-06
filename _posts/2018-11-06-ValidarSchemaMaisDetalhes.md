@@ -75,3 +75,26 @@ Schema      : {
 }
 ```
   
+*Erro no atributo CPF*
+
+```
+Tipo de erro: Type
+Mensagem    : Invalid type. Expected Integer but got String.
+Linha       : 3
+Caminho     : cpf
+Schema      : {
+  "type": "integer"
+}
+```
+
+*Erro no atributo Telefone*
+
+```
+Tipo de erro: Type
+Mensagem    : Invalid type. Expected String but got Integer.
+Linha       : 4
+Caminho     : telefones[1]
+Schema      : {
+  "type": "string"
+}
+```
